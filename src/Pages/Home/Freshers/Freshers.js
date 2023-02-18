@@ -4,7 +4,7 @@ import FresherCard from './FresherCard';
 const Freshers = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/freshers')
+        fetch('https://y-ten-hazel.vercel.app/freshers')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

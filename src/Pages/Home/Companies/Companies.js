@@ -4,7 +4,7 @@ import CompanysCard from './CompanysCard';
 const Companies = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/companies')
+        fetch('https://y-ten-hazel.vercel.app/companies')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

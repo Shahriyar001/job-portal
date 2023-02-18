@@ -5,7 +5,7 @@ const Experience = () => {
 
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/experience')
+        fetch('https://y-ten-hazel.vercel.app/experience')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

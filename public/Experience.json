@@ -1,6 +1,5 @@
 [
     {
-        "_id": "4",
         "post_id": "4",
         "title": "Full stack Developer",
         "company": "Extream soft",
@@ -8,7 +7,6 @@
         "salary": "80k"
     },
     {
-        "_id": "5",
         "post_id": "5",
         "title": "Web design",
         "company": "Alien Apps",
@@ -16,7 +14,6 @@
         "salary": "35k"
     },
     {
-        "_id": "6",
         "post_id": "6",
         "title": "Graphic Design",
         "company": "Desert Rose Soft",
@@ -24,7 +21,6 @@
         "salary": "45k"
     },
     {
-        "_id": "1",
         "post_id": "1",
         "title": "Font-end Developer",
         "company": "Sunroof soft",
@@ -32,7 +28,6 @@
         "salary": "40k"
     },
     {
-        "_id": "2",
         "post_id": "2",
         "title": "Back-end Developer",
         "company": "Software Giant",
@@ -40,7 +35,6 @@
         "salary": "60k"
     },
     {
-        "_id": "3",
         "post_id": "3",
         "title": "Mern stack Developer",
         "company": "Intelliware",

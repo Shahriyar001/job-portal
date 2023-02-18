@@ -4,7 +4,7 @@ import CompanysCard from './CompanysCard';
 const Companies = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('Companies.json')
+        fetch('http://localhost:5000/companies')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

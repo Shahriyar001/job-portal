@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(err => console.log(err));
+    }
     return (
         <div className="navbar h-20 mb-12 pt-12 bg-base-100">
             <div className="navbar-start">
@@ -13,7 +21,13 @@ const Header = () => {
                         <li className='font-semibold'><Link to="/">Home</Link></li>
                         <li className='font-semibold'><Link to="/">About</Link></li>
                         <li className='font-semibold'><Link to="/">Contact Us</Link></li>
-                        <li className='font-semibold'><Link to="/login">Login</Link></li>
+                        {
+                            user?.uid ?
+                                <>
+                                    <li><button onClick={handleLogOut}>Sign out</button></li>
+                                </>
+                                : <li className='font-semibold'><Link to="/login">Login</Link></li>
+                        }
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">Job portal</Link>
@@ -23,7 +37,14 @@ const Header = () => {
                     <li className='font-semibold'><Link to="/">Home</Link></li>
                     <li className='font-semibold'><Link to="/">About</Link></li>
                     <li className='font-semibold'><Link to="/">Contact Us</Link></li>
-                    <li className='font-semibold'><Link to="/login">Login</Link></li>
+                    {
+                        user?.uid ?
+                            <>
+                                <li><button onClick={handleLogOut}>Sign out</button></li>
+                            </>
+                            : <li className='font-semibold'><Link to="/login">Login</Link></li>
+                    }
+
                 </ul>
             </div>
             <div className="navbar-end me-5">

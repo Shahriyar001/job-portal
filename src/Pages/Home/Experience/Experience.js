@@ -5,7 +5,7 @@ const Experience = () => {
 
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('Experience.json')
+        fetch('http://localhost:5000/experience')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

@@ -4,7 +4,7 @@ import FresherCard from './FresherCard';
 const Freshers = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
-        fetch('Fresher.json')
+        fetch('http://localhost:5000/freshers')
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

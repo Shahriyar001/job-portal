@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "4",
+        "post_id": "4",
+        "title": "Full stack Developer",
+        "company": "Extream soft",
+        "img": "https://i.ibb.co/tP97yZT/ex-full.png",
+        "salary": "80k"
+    },
+    {
+        "_id": "5",
+        "post_id": "5",
+        "title": "Web design",
+        "company": "Alien Apps",
+        "img": "https://i.ibb.co/NSVS8ch/ex-web-design.png",
+        "salary": "35k"
+    },
+    {
+        "_id": "6",
+        "post_id": "6",
+        "title": "Graphic Design",
+        "company": "Desert Rose Soft",
+        "img": "https://i.ibb.co/z8XSJ1L/ex-graphic.jpg",
+        "salary": "45k"
+    },
+    {
+        "_id": "1",
+        "post_id": "1",
+        "title": "Font-end Developer",
+        "company": "Sunroof soft",
+        "img": "https://i.ibb.co/18vCz57/ex-font.jpg",
+        "salary": "40k"
+    },
+    {
+        "_id": "2",
+        "post_id": "2",
+        "title": "Back-end Developer",
+        "company": "Software Giant",
+        "img": "https://i.ibb.co/dg2qgrs/ex-back.jpg",
+        "salary": "60k"
+    },
+    {
+        "_id": "3",
+        "post_id": "3",
+        "title": "Mern stack Developer",
+        "company": "Intelliware",
+        "img": "https://i.ibb.co/RDpVdG4/ex-mern.png",
+        "salary": "54k"
+    }
+]
